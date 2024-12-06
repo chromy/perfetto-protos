@@ -1,0 +1,17 @@
+version: v2
+clean: true
+
+inputs:
+  - directory: perfetto
+    exclude_paths:
+      - perfetto/protos/perfetto/trace/perfetto_trace.proto
+      - perfetto/protos/perfetto/config/perfetto_config.proto
+      - perfetto/protos/perfetto/metrics/perfetto_merged_metrics.proto
+      - perfetto/protos/perfetto/trace/ftrace/print.proto
+      - perfetto/protos/perfetto/trace/ftrace/kfree.proto
+      - perfetto/protos/perfetto/trace/ftrace/kmalloc.proto
+
+plugins:
+  - local: protoc-gen-es
+    opt: target=ts
+    out: src/gen
