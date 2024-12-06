@@ -5,10 +5,11 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "gen": "pnpm exec buf generate && pnpm exec tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "hector.dearman@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "@bufbuild/protobuf": "^2.2.2"
   },
