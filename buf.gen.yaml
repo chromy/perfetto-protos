@@ -3,6 +3,8 @@ clean: true
 
 inputs:
   - directory: perfetto
+    paths:
+      - perfetto/protos
     exclude_paths:
       - perfetto/protos/perfetto/trace/perfetto_trace.proto
       - perfetto/protos/perfetto/config/perfetto_config.proto

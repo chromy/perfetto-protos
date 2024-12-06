@@ -2,14 +2,17 @@
   "name": "perfetto-protos",
   "version": "0.0.1",
   "description": "Perfetto protos exposed via protobuf-es for browser and node",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bufbuild/protobuf": "^2.2.2"
+    "@bufbuild/protobuf": "^2.2.2",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.47.2",
