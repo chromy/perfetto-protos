@@ -5,18 +5,20 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "gen": "pnpm exec buf generate && pnpm exec tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./tools/build",
+    "test": "./tools/build && ./tools/test"
   },
   "author": "hector.dearman@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@bufbuild/protobuf": "^2.2.2"
+    "@bufbuild/protobuf": "^2.2.2",
+    "@types/ospec": "^4.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.24.0",
-    "typescript": "^5.7.2",
     "@bufbuild/buf": "^1.47.2",
-    "@bufbuild/protoc-gen-es": "^2.2.2"
+    "@bufbuild/protoc-gen-es": "^2.2.2",
+    "esbuild": "^0.24.0",
+    "ospec": "^4.2.1",
+    "typescript": "^5.7.2"
   }
 }
