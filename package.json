@@ -8,6 +8,11 @@
     "build": "./tools/build",
     "test": "./tools/build && ./tools/test"
   },
+  "keywords": [
+    "perfetto",
+    "tracing",
+    "profiling"
+  ],
   "author": "hector.dearman@gmail.com",
   "license": "MIT",
   "dependencies": {
