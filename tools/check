@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pnpm exec prettier --check . --log-level=error
+if [ "$(tools/get-perfetto-version)" != "$(tools/get-version)" ]; then
+  echo "Our version was $(tools/get-perfetto-version) perfetto version was $(tools/get-version)"
+  exit 1
+fi
+
+

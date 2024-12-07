@@ -29,4 +29,3 @@ console.log("Config as bytes:", bytes);
 
 const json = toJson(TraceConfigSchema, config);
 console.log("Config as json:", json);
-

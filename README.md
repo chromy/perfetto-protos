@@ -1,7 +1,9 @@
 # perfetto-protos
-*Use perfetto protos in {Type,Java}Script in the browser and node*
+
+_Use perfetto protos in {Type,Java}Script in the browser and node_
 
 Example:
+
 ```typescript
 import { TraceConfigSchema } from "perfetto-protos";
 import { create, toBinary, toJson } from "@bufbuild/protobuf";

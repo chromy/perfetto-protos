@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pnpm version --json | jq -r '.["perfetto-protos"]'

@@ -16,11 +16,13 @@ jobs:
       - uses: actions/setup-node@v4
         name: Install node
         with:
-          node-version: '22'
-          cache: 'pnpm'
+          node-version: "22"
+          cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
       - run: ./tools/build
         name: Build
       - run: ./tools/test
         name: Test
+      - run: ./tools/check
+        name: Check
