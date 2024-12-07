@@ -1,6 +1,6 @@
 {
   "name": "perfetto-protos",
-  "version": "0.0.1",
+  "version": "48.1.0",
   "description": "Perfetto protos exposed via protobuf-es for browser and node",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,9 @@
     "@bufbuild/buf": "^1.47.2",
     "@bufbuild/protoc-gen-es": "^2.2.2",
     "esbuild": "^0.24.0",
+    "eslint": "^9.16.0",
     "ospec": "^4.2.1",
+    "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   }
 }
