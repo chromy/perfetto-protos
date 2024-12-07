@@ -29,8 +29,8 @@ jobs:
         name: Test
       - run: ./tools/check
         name: Check
-      - run: pnpm publish --access public --dry-run
-        name: Publish
+      - run: pnpm publish --no-git-checks --access public --dry-run
+        name: Publish (dry run)
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
