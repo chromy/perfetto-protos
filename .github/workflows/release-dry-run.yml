@@ -1,0 +1,37 @@
+name: Publish release to npm (dry run)
+on:
+  push:
+    branches:
+      - 'release-*'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+        with:
+          submodules: true
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+      - uses: actions/setup-node@v4
+        name: Install node
+        with:
+          node-version: "22"
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - run: ./tools/build
+        name: Build
+      - run: ./tools/test
+        name: Test
+      - run: ./tools/check
+        name: Check
+      - run: pnpm publish --access public --dry-run
+        name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+
