@@ -1,4 +1,6 @@
 #!/bin/bash
 
+set -e
+
 pnpm exec buf generate
 pnpm exec tsc

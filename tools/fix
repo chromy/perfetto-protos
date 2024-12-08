@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 pnpm exec prettier --write . --log-level=error
 pnpm version --allow-same-version --no-git-tag-version $(tools/get-perfetto-version)
 
