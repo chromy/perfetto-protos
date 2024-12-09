@@ -19,7 +19,7 @@ jobs:
         name: Install node
         with:
           node-version: "22"
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
@@ -33,5 +33,3 @@ jobs:
         name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-
