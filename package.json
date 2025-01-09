@@ -1,6 +1,6 @@
 {
   "name": "perfetto-protos",
-  "version": "48.1.0",
+  "version": "49.0.0",
   "description": "Perfetto protos exposed via protobuf-es for browser and node",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
