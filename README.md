@@ -39,6 +39,7 @@ console.log("Config as json:", json);
 ```
 
 # Links
+
 - [NPM](www.npmjs.com/package/perfetto-protos)
 - [TracePacket](https://perfetto.dev/docs/reference/trace-packet-proto)
 - [TraceConfig](https://perfetto.dev/docs/reference/trace-config-proto)
