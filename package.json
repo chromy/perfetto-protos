@@ -14,7 +14,7 @@
     "profiling"
   ],
   "author": "hector.dearman@gmail.com",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "@bufbuild/protobuf": "^2.2.2"
   },
