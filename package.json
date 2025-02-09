@@ -22,7 +22,7 @@
     "@types/ospec": "^4.2.0",
     "@bufbuild/buf": "^1.47.2",
     "@bufbuild/protoc-gen-es": "^2.2.2",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.0",
     "eslint": "^9.16.0",
     "ospec": "^4.2.1",
     "prettier": "^3.4.2",
